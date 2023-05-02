@@ -1,5 +1,5 @@
 // index.js - Lab 5: Data Types and Variables
-// Author: Elizabeth Liao
+// Author: Elizabeth Liao <eyliao@ucsc.edu>
 // Date: April 27, 2023
 
 // Define Variables
