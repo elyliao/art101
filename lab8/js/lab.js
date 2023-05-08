@@ -28,7 +28,8 @@ doubledArray = nums.map(function(x) {
 // doubling my array
 console.log("Each of the numbers in my array doubled is: " + doubledArray);
 
-//outputting results onto the html
+// outputting results onto the html
+// figured this how to do this thanks to my lab partner, Bruce Bai <brbai@ucsc.edu>
 var mapResults = "This is my array of numbers: " + nums + "<br>" + "2 squared is: " + square(2) + "<br>" + "4 squared is: " + square(4) + "<br>" + "My array of numbers squared is: " + nums.map(square) + "<br>" + "Each of the numbers in my array doubled is: " + doubledArray; 
 
 var outputEl = document.getElementById("output");
