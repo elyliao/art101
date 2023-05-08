@@ -27,3 +27,9 @@ doubledArray = nums.map(function(x) {
 
 // doubling my array
 console.log("Each of the numbers in my array doubled is: " + doubledArray);
+
+var mapResults = "This is my array of numbers: " + nums + "<br>" + "2 squared is: " + square(2) + "<br>" + "4 squared is: " + square(4) + "<br>" + "My array of numbers squared is: " + nums.map(square) + "<br>" + "Each of the numbers in my array doubled is: " + doubledArray; 
+
+var outputEl = document.getElementById("output");
+document.getElementById("output").innerHTML = mapResults;
+
