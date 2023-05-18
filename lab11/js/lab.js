@@ -35,7 +35,6 @@ screenshotsEl.click(function() {
 });
 
 // make buttons change button color
-// give challengeEl an id
 challengeButton = $("#challenge button");
 problemsButton = $("#problems button");
 challengeButton.click(function() {
