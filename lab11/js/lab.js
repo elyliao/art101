@@ -17,26 +17,31 @@ reflectionEl.append("<button>Press Me!</button>");
 resultsEl.append("<button>Press Me!</button>");
 screenshotsEl.append("<button>Press Me!</button>");
 
+// assign buttons to variables
+var challengeButton = $("#challenge button");
+var problemsButton = $("#problems button");
+var reflectionButton = $("#reflection button");
+var resultsButton = $("#results button");
+var screenshotsButton = $("#screenshots button");
+
 // toggle class special with button click
-challengeEl.click(function() {
+challengeButton.click(function() {
     challengeEl.toggleClass("special");
 });
-problemsEl.click(function() {
+problemsButton.click(function() {
     problemsEl.toggleClass("special");
 });
-reflectionEl.click(function() {
+reflectionButton.click(function() {
     reflectionEl.toggleClass("special");
 });
-resultsEl.click(function() {
+resultsButton.click(function() {
     resultsEl.toggleClass("special");
 });
-screenshotsEl.click(function() {
+screenshotsButton.click(function() {
     screenshotsEl.toggleClass("special");
 });
 
 // make buttons change button color
-challengeButton = $("#challenge button");
-problemsButton = $("#problems button");
 challengeButton.click(function() {
     problemsButton.toggleClass("color-change");
 });
