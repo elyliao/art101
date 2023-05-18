@@ -11,8 +11,8 @@ var resultsEl = $("#results");
 var screenshotsEl = $("#screenshots");
 
 // create the buttons
-challengeEl.append("<button>Press Me!</button>");
-problemsEl.append("<button>Press Me!</button>");
+challengeEl.append("<button>Press Me to change problems' button color!</button>");
+problemsEl.append("<button>Press Me to change challenge's button color!</button>");
 reflectionEl.append("<button>Press Me!</button>");
 resultsEl.append("<button>Press Me!</button>");
 screenshotsEl.append("<button>Press Me!</button>");
@@ -32,4 +32,15 @@ resultsEl.click(function() {
 });
 screenshotsEl.click(function() {
     screenshotsEl.toggleClass("special");
+});
+
+// make buttons change button color
+// give challengeEl an id
+challengeButton = $("#challenge button");
+problemsButton = $("#problems button");
+challengeButton.click(function() {
+    problemsButton.toggleClass("color-change");
+});
+problemsButton.click(function() {
+    challengeButton.toggleClass("color-change");
 });
