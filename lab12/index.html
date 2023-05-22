@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 12 - Conditionals</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 12 - Conditionals</h1>
+			<div class="minor-section" id="challenge">
+				<h2>Challenge</h2>
+				<p> The challenge of this lab was to create a function that depends on conditionals.</p>
+			</div>
+
+			<div class="minor-section" id="problems">
+				<h2>Problems</h2>
+				<p> My main problem for this lab was getting retrieving the value of the input. I found out that my issue was that I assigned the value of the input to a variable before the event listener for the button, causing nothing to be assigned to the variable. My other issue was that I wasn't sure how to assign the value of the input -- after some searching on w3schools, I found out that it was because I was using "$("#input").value", however with jQuery, you need to use "$("#input").val()" instead.
+				</p>
+			</div>
+
+			<div class="minor-section" id="reflection">
+				<h2>Reflection</h2>
+				<p> Aside from the two problems I listed above, the rest of the lab went rather smoothly. Conditionals in JavaScript weren't hard for me to understand/learn due to my prior experience with Python, so this lab wasn't too difficult. </p>
+			</div>
+
+			<div class="minor-section" id="results">
+				<h2>Results</h2>
+				<label>Please enter your name for sorting:
+					<input type="text" id="input">
+				</label>
+				<button id="button">Submit.</button>
+				<div id="output">
+				</div>
+			</div>
+
+			<div class ="minor-section" id="screenshots">
+				<h2>Screenshots</h2>
+				<p>Here's my HTML file for this lab:</p>
+					<img src="img/lab12_task1.png" width=650px>
+				<p>Here's my JavaScript file for this lab (which is also linked below):</p>
+					<img src="img/lab12_task2.png" width=650px>
+			</div>
+
+		</section>
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+			<ul>
+				<li><a href="js/lab.js">JavaScript Source for this lab</a></li>
+				<li><a href="../index.html">Homepage</a></li>
+				<li><a href="lab2/index.html">Lab 2: Hello World</a></li>
+				<li><a href="lab3/index.html">Lab 3: File Structure and File Transfer</a></li>
+				<li><a href="lab4/index.html">lab 4: Pseudocoding and Problem-Solving</a></li>
+				<li><a href="lab5/index.html">lab 5: Data Types and Variables</a></li>
+				<li><a href="lab6/index.html">lab 6: Arrays and Objects</a></li>
+				<li><a href="lab7/index.html">lab 7: Functions</a></li>
+				<li><a href="lab8/index.html">lab 8: Anon Functions and Callbacks</a></li>
+				<li><a href="lab9/index.html">lab 9: JavaScript for the Web</a></li>
+				<li><a href="lab10/index.html">lab 10: JavaScript Events and Forms</a></li>
+				<li><a href="lab11/index.html">lab 11: Libraries and jQuery </a></li>
+			</ul>
+		</nav>
+	</main>
+</body>
+</html>
