@@ -25,3 +25,17 @@ button.addEventListener("click", function() {
     var output = document.getElementById("output");
     output.innerHTML = "Here is your new name: " + newName;
 });
+
+// Task X: change an aspect of the page with a button click
+var click1 = 0
+document.getElementById("glitch-1").addEventListener("click", function () {
+  document.getElementsByClassName("minor-section")[click1].style.backgroundColor = "red";
+  document.getElementsByTagName("h1")[0].style.color="yellow";
+  click1 += 1;
+})
+var click2 = 0
+document.getElementById("glitch-2").addEventListener("click", function () {
+  document.getElementsByTagName("h2")[click2].style.color = "orange";
+  document.getElementById("content").style.backgroundColor = "green";
+  click2 += 1;
+})
